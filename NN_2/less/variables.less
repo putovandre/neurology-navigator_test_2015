@@ -1,0 +1,73 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@black:              #000;
+@gray-darker:            lighten(@black, 13.5%); // #222
+@gray-dark:              lighten(@black, 60%);   // #333
+@gray:                   lighten(@black, 80%); // #555
+@gray-light:             lighten(@black, 94%); // #777
+@white: 			#fff; // #fff
+
+
+@base-color:#0099cc;
+@base-green:spin(@base-color,-105);
+@base-green-active:desaturate(@base-green, 10%);
+@base-active:desaturate(@base-color, 10%);
+@base-active-border:darken(@base-color, 20%);
+
+@search_btn-color: 		@gray;
+@search_btn-color-hover:@gray-dark;
+@breadcrumb-font-color: darken(@base-active, 20%);
+@menu_btn-color:  		darken(@base-active, 20%);
+@logo-font-color:  		@white;
+
+//== Scaffolding
+@text-color:            @white;
+@link-color:            @base-active;
+@link-hover-color:      darken(@link-color, 15%);
+@link-hover-decoration: underline;
+
+
+//== Typography
+//
+@font-family-sans-serif:  sans-serif;
+@font-family-serif:       serif;
+@logo-font-family:  	@font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); 
+@font-size-small:         ceil((@font-size-base * 0.85)); 
+
+@font-size-h1:            floor(((@font-size-base+4) * 2.8));
+@font-size-h2:            floor((@font-size-base * 2.15)); 
+@font-size-h3:            ceil((@font-size-base * 1.7)); 
+@font-size-h4:            ceil((@font-size-base * 1.25)); 
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); 
+
+@search_btn-size:  		@search-height*.7;
+@breadcrumb-font-size: 	@font-size-base;
+@logo-font-size:  		@font-size-h1;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//search var 
+@search-height: 	20px;
+@l-search-width:    570px;
+@search_btn-margin:  		@search-height/5 0 @search-height/5 -@search-height/1.2;
